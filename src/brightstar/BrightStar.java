@@ -10,16 +10,17 @@ import java.util.logging.Logger;
 
 public class BrightStar {
     
-    public static void generateSolution(ArrayList<MeshClient> rClient, ArrayList<MeshNode> rNode, String filename) throws IOException{
+    public static double generateSolution(ArrayList<MeshClient> rClient, ArrayList<MeshNode> rNode, String filename) throws IOException{
         BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
+        double solutionValue = 0;
         double origSize = rClient.size();
         int i = 0;
         while(i < rNode.size()){
             bw.write("\n");
             //System.out.println(rNode.get(i).toString());
             rNode.get(i).selectClients(rClient);
-            rNode.get(i).nodeSummary();
-            rNode.get(i).displayClients();
+            //rNode.get(i).nodeSummary();
+            //rNode.get(i).displayClients();
             rClient = rNode.get(i).removeClients(rClient);
             //System.out.println("CLIENTS REMAINING " + rClient.size());
             bw.write(rNode.get(i).toString()+"\n");
@@ -31,11 +32,13 @@ public class BrightStar {
             i++;
         }
         bw.close();
+        solutionValue = rClient.size();
+        return solutionValue;
     }
 
     public static void main(String[] args) {
         System.out.println("START Simulation");
-        
+        String filename = "C:\\Users\\Locklear\\Documents\\NetBeansProjects\\BrightStar\\src\\brightstar\\Solution";
         ArrayList<MeshClient> rClient = ClientFactory.generateClients(48,639);
         ArrayList<MeshNode> rNode = NodeFactory.generateNodes(16,639);
         double[] centerCoords = MeshSupport.getClientCenter(rClient);
@@ -45,8 +48,17 @@ public class BrightStar {
         System.out.println("Most Remote Client located at " + maxCoords[0] + "," + maxCoords[1]);
         System.out.println("Nearest Client located at " + minCoords[0] + "," + minCoords[1]);
         try {
-            generateSolution(rClient,rNode,"C:\\Users\\Locklear\\Documents\\NetBeansProjects\\BrightStar\\src\\brightstar\\Solution");
-            //generateSolution(rClient,rNode,"/BrightStar/src/brightstar/Solution");
+            int i = 0;
+            while(i < 10){
+               double sValue = generateSolution(rClient,rNode,filename);
+               System.out.println(sValue);
+               if(sValue < 48){
+                   rNode = MeshSupport.moveNodes(rNode);
+               }
+               i++;
+            }
+            
+            
         } catch (IOException ex) {
             Logger.getLogger(BrightStar.class.getName()).log(Level.SEVERE, null, ex);
         }   

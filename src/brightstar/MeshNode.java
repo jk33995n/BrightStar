@@ -92,6 +92,10 @@ public class MeshNode {
         
     }
     
+    public void removeAllClients(){
+        this.clients.removeAll(this.getClients());
+    }
+    
     public ArrayList<MeshClient> removeClients(ArrayList<MeshClient> clients){
         ArrayList<MeshClient> x = new ArrayList<>();
         for(MeshClient c: clients){

@@ -79,4 +79,26 @@ public class MeshSupport {
         return minCoords;
     }
     
+    public static ArrayList<MeshNode> moveNodes(ArrayList<MeshNode> nodes){
+        int xMin = 0;
+        int xMax = 639;
+        int yMin = 0;
+        int yMax = 639;
+        ArrayList<MeshNode> movedNodes = new ArrayList<>(nodes.size());
+        for(MeshNode mn: nodes){
+            if(mn.getClientCount() < 2){
+                if(mn.getxCoord() < xMax){
+                    mn.setxCoord(mn.getxCoord()+ 1);
+                }
+                if(mn.getyCoord() < yMax){
+                    mn.setyCoord(mn.getyCoord()+ 1);
+                }
+                
+            }
+            mn.removeAllClients();
+            movedNodes.add(mn);
+        }
+        return movedNodes;
+    }
+    
 }
