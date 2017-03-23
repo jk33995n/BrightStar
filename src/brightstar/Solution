@@ -1,0 +1,112 @@
+
+MeshNode{name = N0-0, xCoord = 443, yCoord = 609, clients = 3}
+	 CLIENTS REMAINING 45
+	 Number of Clients: 48.0
+	 Remaining Clients: 45.0
+
+	 Clients NOT COVERED Percentage 0.9375
+
+MeshNode{name = N0-1, xCoord = 547, yCoord = 369, clients = 0}
+	 CLIENTS REMAINING 45
+	 Number of Clients: 48.0
+	 Remaining Clients: 45.0
+
+	 Clients NOT COVERED Percentage 0.9375
+
+MeshNode{name = N0-2, xCoord = 340, yCoord = 33, clients = 0}
+	 CLIENTS REMAINING 45
+	 Number of Clients: 48.0
+	 Remaining Clients: 45.0
+
+	 Clients NOT COVERED Percentage 0.9375
+
+MeshNode{name = N0-3, xCoord = 234, yCoord = 511, clients = 1}
+	 CLIENTS REMAINING 44
+	 Number of Clients: 48.0
+	 Remaining Clients: 44.0
+
+	 Clients NOT COVERED Percentage 0.9166666666666666
+
+MeshNode{name = N0-4, xCoord = 631, yCoord = 44, clients = 0}
+	 CLIENTS REMAINING 44
+	 Number of Clients: 48.0
+	 Remaining Clients: 44.0
+
+	 Clients NOT COVERED Percentage 0.9166666666666666
+
+MeshNode{name = N0-5, xCoord = 465, yCoord = 580, clients = 0}
+	 CLIENTS REMAINING 44
+	 Number of Clients: 48.0
+	 Remaining Clients: 44.0
+
+	 Clients NOT COVERED Percentage 0.9166666666666666
+
+MeshNode{name = N0-6, xCoord = 157, yCoord = 528, clients = 2}
+	 CLIENTS REMAINING 42
+	 Number of Clients: 48.0
+	 Remaining Clients: 42.0
+
+	 Clients NOT COVERED Percentage 0.875
+
+MeshNode{name = N0-7, xCoord = 107, yCoord = 515, clients = 0}
+	 CLIENTS REMAINING 42
+	 Number of Clients: 48.0
+	 Remaining Clients: 42.0
+
+	 Clients NOT COVERED Percentage 0.875
+
+MeshNode{name = N0-8, xCoord = 401, yCoord = 285, clients = 1}
+	 CLIENTS REMAINING 41
+	 Number of Clients: 48.0
+	 Remaining Clients: 41.0
+
+	 Clients NOT COVERED Percentage 0.8541666666666666
+
+MeshNode{name = N0-9, xCoord = 323, yCoord = 202, clients = 3}
+	 CLIENTS REMAINING 38
+	 Number of Clients: 48.0
+	 Remaining Clients: 38.0
+
+	 Clients NOT COVERED Percentage 0.7916666666666666
+
+MeshNode{name = N0-10, xCoord = 245, yCoord = 348, clients = 0}
+	 CLIENTS REMAINING 38
+	 Number of Clients: 48.0
+	 Remaining Clients: 38.0
+
+	 Clients NOT COVERED Percentage 0.7916666666666666
+
+MeshNode{name = N0-11, xCoord = 586, yCoord = 15, clients = 0}
+	 CLIENTS REMAINING 38
+	 Number of Clients: 48.0
+	 Remaining Clients: 38.0
+
+	 Clients NOT COVERED Percentage 0.7916666666666666
+
+MeshNode{name = N0-12, xCoord = 1, yCoord = 320, clients = 0}
+	 CLIENTS REMAINING 38
+	 Number of Clients: 48.0
+	 Remaining Clients: 38.0
+
+	 Clients NOT COVERED Percentage 0.7916666666666666
+
+MeshNode{name = N0-13, xCoord = 448, yCoord = 109, clients = 1}
+	 CLIENTS REMAINING 37
+	 Number of Clients: 48.0
+	 Remaining Clients: 37.0
+
+	 Clients NOT COVERED Percentage 0.7708333333333334
+
+MeshNode{name = N0-14, xCoord = 589, yCoord = 138, clients = 1}
+	 CLIENTS REMAINING 36
+	 Number of Clients: 48.0
+	 Remaining Clients: 36.0
+
+	 Clients NOT COVERED Percentage 0.75
+
+MeshNode{name = N0-15, xCoord = 493, yCoord = 101, clients = 0}
+	 CLIENTS REMAINING 36
+	 Number of Clients: 48.0
+	 Remaining Clients: 36.0
+
+	 Clients NOT COVERED Percentage 0.75
